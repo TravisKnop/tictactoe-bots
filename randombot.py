@@ -5,7 +5,7 @@ third_row = input()
 
 import random
 
-alpha = random.randint(2)
-number = random.randint(2)
+alpha = random.randint(0,2)
+number = random.randint(0,2)
 
 print("{} {}".format(alpha, number))
