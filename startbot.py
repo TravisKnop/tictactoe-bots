@@ -105,20 +105,20 @@ class FourthTurn(Board):
     def play(self):
         if Board.spaces_taken(self) == 3:
              if Board.locateO(self) == [6]:
-                    if Board.locateX(self) == [4, 8]:
-                        print("0 0")
-                    elif Board.locateX(self) == [4, 7]:
-                        print("0 1")
-                    elif Board.locateX(self) == [4, 5]:
-                        print("1 0")
-                    elif Board.locateX(self) == [3, 4]:
-                        print("1 2")
-                    elif Board.locateX(self) == [2, 4]:
-                        print("2 1")
-                    elif Board.locateX(self) == [1, 4]:
-                        print("2 1")
-                    elif Board.locateX(self) == [0, 4]:
-                        print("2 2")
+                if Board.locateX(self) == [4, 8]:
+                    print("0 0")
+                elif Board.locateX(self) == [4, 7]:
+                    print("0 1")
+                elif Board.locateX(self) == [4, 5]:
+                    print("1 0")
+                elif Board.locateX(self) == [3, 4]:
+                    print("1 2")
+                elif Board.locateX(self) == [2, 4]:
+                    print("2 1")
+                elif Board.locateX(self) == [1, 4]:
+                    print("2 1")
+                elif Board.locateX(self) == [0, 4]:
+                    print("2 2")
             else:
                 x = random.choice(Board.locate_(self))
                 if x == 0:
