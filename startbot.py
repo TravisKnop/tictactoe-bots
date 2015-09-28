@@ -119,6 +119,26 @@ class FourthTurn(Board):
                         print("2 1")
                     elif Board.locateX(self) == [0, 4]:
                         print("2 2")
+            else:
+                x = random.choice(Board.locate_(self))
+                if x == 0:
+                    print("0 0")
+                elif x == 1:
+                    print("0 1")
+                elif x == 2:
+                    print("0 2")
+                elif x == 3:
+                    print("1 0")
+                elif x == 5:
+                    print("1 2")
+                elif x == 6:
+                    print("2 0")
+                elif x == 7:
+                    print("2 1")
+                elif x == 8:
+                    print("2 2")
+
+
 
 
 class SeventhTurn(Board):
